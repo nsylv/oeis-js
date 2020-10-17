@@ -1,0 +1,23 @@
+{
+  "name": "oeis-js",
+  "version": "0.0.0",
+  "description": "A collection of functions that generate sequences defined in OEIS",
+  "main": "distindex.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "oeis"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nsylv/oeis-js.git"
+  },
+  "homepage": "https://github.com/nsylv/oeis-js#readme",
+  "author": "Nikki Schmidt <nsilla16@gmail.com> (http://nsylv.github.io/)",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  }
+}
