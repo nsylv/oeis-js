@@ -1,1 +1,1 @@
-console.log('hello foo');
+export * from './a000045';
