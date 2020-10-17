@@ -2,7 +2,7 @@
   "name": "oeis-js",
   "version": "0.0.0",
   "description": "A collection of functions that generate sequences defined in OEIS",
-  "main": "distindex.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
@@ -28,6 +28,6 @@
     "preset": "ts-jest"
   },
   "files": [
-    "dist/src/**/*"
+    "dist"
   ]
 }
