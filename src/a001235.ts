@@ -1,5 +1,43 @@
 import { DEFAULT_LIMIT } from './constants';
 
+const FIRST_34_RESULTS = [
+  1729,
+  4104,
+  13832,
+  20683,
+  32832,
+  39312,
+  40033,
+  46683,
+  64232,
+  65728,
+  110656,
+  110808,
+  134379,
+  149389,
+  165464,
+  171288,
+  195841,
+  216027,
+  216125,
+  262656,
+  314496,
+  320264,
+  327763,
+  373464,
+  402597,
+  439101,
+  443889,
+  513000,
+  513856,
+  515375,
+  525824,
+  558441,
+  593047,
+  684019,
+  704977,
+];
+
 /**
  * Taxicab Numbers: sums of 2 cubes in n ways
  *
@@ -16,10 +54,10 @@ export function a001235(
     throw Error('Cannot specify limit <0');
   }
   if (limit === 0) return [];
-  var result = [-666];
+  var result = [-666, ...FIRST_34_RESULTS];
   var i = 1;
-  var count = 0;
-  var N = Math.min(offset + limit, 20);
+  var count = 35;
+  var N = Math.min(offset + limit, 20); // TODO this is wrong, should just be N = offset + limit, but this breaks down for large ranges (including the default one)
   while (count < N) {
     var int_count = 0;
 
